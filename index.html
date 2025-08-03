@@ -5,58 +5,95 @@
   <title>I NEED WATER Downloads</title>
   <style>
     body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 2em;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f6f6f6;
+      color: #111;
     }
+
     h1 {
+      text-align: center;
       font-size: 2.5em;
-      margin-bottom: 0.2em;
+      margin-bottom: 40px;
     }
+
     h2 {
-      margin-top: 2em;
-      font-size: 1.5em;
+      margin-top: 40px;
+      font-size: 1.8em;
     }
+
     p {
-      max-width: 500px;
-      margin: 0 auto 1em;
-      font-size: 1em;
-      color: #444;
+      font-size: 1.1em;
+      margin-bottom: 20px;
     }
-    a.button {
-      display: inline-block;
-      margin: 0.5em;
-      padding: 0.75em 1.5em;
-      background: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .alt {
-      background: white;
-      color: black;
-      border: 2px solid black;
+
+    .image-item {
+      text-align: center;
+      width: 200px;
+    }
+
+    .image-item img {
+      width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .image-item img:hover {
+      transform: scale(1.05);
+      border-color: #0077cc;
+    }
+
+    .filename {
+      margin-top: 8px;
+      font-size: 0.95em;
+      word-wrap: break-word;
     }
   </style>
 </head>
 <body>
-  <h1>I NEED WATER</h1>
-  <p>Download and share these resources to amplify the message.</p>
+
+  <h1>I NEED WATER Downloads</h1>
 
   <h2>"I NEED WATER" Social Tiles</h2>
   <p>"I NEED WATER" square graphics for Instagram or any platform.</p>
-  <a class="button" href="TILE-BLACK.png" download>Tile – Black</a>
-  <a class="button alt" href="TILE-WHITE.png" download>Tile – White</a>
-  <a class="button" href="TILE-BLUE.png" download>Tile – Blue</a>
-  <a class="button alt" href="TILE-RED.png" download>Tile – Red</a>
+  <div class="image-grid">
+    <div class="image-item">
+      <a href="TILE-BLACK.png" download><img src="TILE-BLACK.png" alt="Tile Black"></a>
+      <div class="filename">TILE-BLACK.png</div>
+    </div>
+    <div class="image-item">
+      <a href="TILE-WHITE.png" download><img src="TILE-WHITE.png" alt="Tile White"></a>
+      <div class="filename">TILE-WHITE.png</div>
+    </div>
+    <div class="image-item">
+      <a href="TILE-RED.png" download><img src="TILE-RED.png" alt="Tile Red"></a>
+      <div class="filename">TILE-RED.png</div>
+    </div>
+    <div class="image-item">
+      <a href="TILE-BLUE.png" download><img src="TILE-BLUE.png" alt="Tile Blue"></a>
+      <div class="filename">TILE-BLUE.png</div>
+    </div>
+  </div>
 
   <h2>"I NEED WATER" Social Frames</h2>
   <p>Black and white "I NEED WATER" overlays for profile pics or posts. Transparent background.</p>
-  <a class="button" href="FRAME-BLACK.png" download>Frame – Black</a>
-  <a class="button alt" href="FRAME-WHITE.png" download>Frame – White</a>
+  <div class="image-grid">
+    <div class="image-item">
+      <a href="FRAME-BLACK.png" download><img src="FRAME-BLACK.png" alt="Frame Black"></a>
+      <div class="filename">FRAME-BLACK.png</div>
+    </div>
+    <div class="image-item">
+      <a href="FRAME-WHITE.png" download><img src="FRAME-WHITE.png" alt="Frame White"></a>
+      <div class="filename">FRAME-WHITE.png</div>
+    </div>
+  </div>
 
-  <p style="margin-top: 3em; font-size: 0.9em;">No logos. No gimmicks. Just the message.</p>
 </body>
 </html>
